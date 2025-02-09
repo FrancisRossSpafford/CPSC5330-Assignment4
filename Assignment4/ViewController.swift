@@ -89,7 +89,7 @@ class ViewController: UIViewController {
     @objc func updateCountdownTimer() {
         if totalTime > 0 {
             totalTime -= 1
-            timeRemainingLabel.text = formatTime(totalTime)
+            timeRemainingLabel.text = "Time Remaining: " + formatTime(totalTime)
         } else {
             timeRemainingLabel.text = "Time's up!"
             playSound()
